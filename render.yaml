@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: fishing-venue
+    runtime: docker
+    repo: https://github.com/your-username/fishing-venue.git
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./
+    healthCheckPath: /api/venue
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ACCESS_KEY
+        generateValue: true
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1
