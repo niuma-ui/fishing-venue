@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="休闲生态农场养殖 - 在线预约钓位，查看实时鱼情">
+  <meta name="theme-color" content="#123f36">
+  <title>休闲生态农场养殖</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#/" class="nav-brand">
+        <span class="brand-icon">🎣</span>
+        <span class="brand-text">休闲生态农场养殖</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#/" class="nav-link" data-route="/">首页</a>
+        <a href="#/booking" class="nav-link" data-route="/booking">预约</a>
+        <a href="#/fish" class="nav-link" data-route="/fish">鱼情</a>
+        <a href="#/orders" class="nav-link" data-route="/orders">订单</a>
+      </div>
+      <div class="nav-user" id="navUser">
+        <button class="btn btn-outline btn-sm" id="loginBtn">登录</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 主内容区 -->
+  <main class="app-main" id="app">
+    <!-- 动态渲染 -->
+  </main>
+
+  <!-- Toast 提示 -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- 底部 -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <p>© 2026 休闲生态农场养殖 · 钓场预约系统</p>
+      <p class="footer-security">🔒 数据加密传输 · 安全防护已启用</p>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
